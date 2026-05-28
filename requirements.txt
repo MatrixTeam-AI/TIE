@@ -1,0 +1,13 @@
+torch>=2.0.0
+transformers
+imageio
+imageio[ffmpeg]
+safetensors
+einops
+sentencepiece
+protobuf
+ftfy
+regex
+numpy
+pillow
+tqdm
