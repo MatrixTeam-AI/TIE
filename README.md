@@ -18,21 +18,29 @@
 ### Comparison with Seedance 2.0
 
 <p align="center">
-  <video src="assets/timestamp_comparison_example1.mp4" controls width="86%"></video>
+  <a href="assets/timestamp_comparison_example1.mp4">
+    <img src="assets/timestamp_comparison_example1.gif" alt="Timestamp comparison example 1" width="86%">
+  </a>
 </p>
 
 <p align="center">
-  <video src="assets/timestamp_comparison_example3.mp4" controls width="86%"></video>
+  <a href="assets/timestamp_comparison_example3.mp4">
+    <img src="assets/timestamp_comparison_example3.gif" alt="Timestamp comparison example 3" width="86%">
+  </a>
 </p>
 
 <p align="center">
-  <video src="assets/timestamp_comparison_example5.mp4" controls width="86%"></video>
+  <a href="assets/timestamp_comparison_example5.mp4">
+    <img src="assets/timestamp_comparison_example5.gif" alt="Timestamp comparison example 5" width="86%">
+  </a>
 </p>
 
 ### Long Video
 
 <p align="center">
-  <video src="assets/long_robotic_task.mp4" controls width="86%"></video>
+  <a href="assets/long_robotic_task.mp4">
+    <img src="assets/long_robotic_task.gif" alt="Long robotic task demo" width="86%">
+  </a>
 </p>
 
 **Find more on our [project pages](https://matrixteam-ai.github.io/pages/TIE/)!**
@@ -96,14 +104,45 @@ You can also provide every component explicitly:
 Event-caption format:
 
 ```json
-{"video": "sample_0001.mp4", "prompt": {"global_description": "A cinematic combat scene.", "entities": [{"events": [{"start_time": 0.0, "end_time": 4.0, "description": "The warrior steps forward."}, {"start_time": 4.0, "end_time": 10.0, "description": "The opponent raises a weapon."}]}]}} 
-# [Start Timestamps, End Timestamps, Descriptions]
+{
+  "video": "sample_0001.mp4",
+  "prompt": {
+    "global_description": "A cinematic combat scene.",
+    "entities": [
+      {
+        "events": [
+          {
+            "start_time": 0.0,
+            "end_time": 4.0,
+            "description": "The warrior steps forward."
+          },
+          {
+            "start_time": 4.0,
+            "end_time": 10.0,
+            "description": "The opponent raises a weapon."
+          }
+        ]
+      }
+    ]
+  }
+}
 ```
 
 Simple caption format:
 
 ```json
-{"video": "sample_0002.mp4", "prompt": [[0.0, 0.0, 4.0], [10.0, 4.0, 10.0],["A cinematic combat scene.", "The warrior steps forward.", "The opponent raises a weapon."]]}
+{
+  "video": "sample_0002.mp4",
+  "prompt": [
+    [0.0, 0.0, 4.0],
+    [10.0, 4.0, 10.0],
+    [
+      "A cinematic combat scene.",
+      "The warrior steps forward.",
+      "The opponent raises a weapon."
+    ]
+  ]
+}
 ```
 
 
