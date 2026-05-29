@@ -15,7 +15,7 @@
 
 ## Demo
 
-### Comparison with Seedance 2.0
+### Comparison with Seedance 2.0 (click to see original file)
 
 <p align="center">
   <a href="assets/timestamp_comparison_example1.mp4">
@@ -35,7 +35,7 @@
   </a>
 </p>
 
-### Long Video
+### Long Video (click to see original file)
 
 <p align="center">
   <a href="assets/long_robotic_task.mp4">
